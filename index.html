@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Documents</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-top: 50px;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Container for Document Links */
+        .document-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 100px; /* To offset fixed nav bar */
+            padding: 20px;
+        }
+
+        .document-link {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            margin: 15px;
+            border-radius: 5px;
+            width: 200px;
+            transition: all 0.3s ease;
+        }
+        .document-link:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+
+        /* Document Previews and Descriptions */
+        .document-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 8px;
+            padding: 15px;
+            width: 250px;
+            transition: all 0.3s ease;
+        }
+
+        .document-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+        }
+
+        .doc-preview {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#documents">Documents</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Page Title -->
+    <h1>Welcome to My Document Collection</h1>
+    <p>Click the links below to view or download my documents. Feel free to explore!</p>
+
+    <!-- Document Section -->
+    <div id="documents" class="document-links">
+        <!-- Document 1 Card -->
+        <div class="document-card">
+            <img src="https://via.placeholder.com/200" class="doc-preview" alt="Document 1 Preview">
+            <h3>Document 1</h3>
+            <p>Description of Document 1.</p>
+            <a href="https://drive.google.com/file/d/1bwi1ekMhr23MLvrEmRcJ2BRaMEk9LIWZ/view?usp=drive_link" class="document-link" target="_blank">Open Document 1</a>
+        </div>
+
+        <!-- Document 2 Card -->
+        <div class="document-card">
+            <img src="https://via.placeholder.com/200" class="doc-preview" alt="Document 2 Preview">
+            <h3>Document 2</h3>
+            <p>Description of Document 2.</p>
+            <a href="https://drive.google.com/file/d/1NaH-OKbrryEBro9y_2ZpmAFPcByUGxcu/view?usp=drive_link" class="document-link" target="_blank">Open Document 2</a>
+        </div>
+
+        <!-- Document 3 Card -->
+        <div class="document-card">
+            <img src="https://via.placeholder.com/200" class="doc-preview" alt="Document 3 Preview">
+            <h3>Document 3</h3>
+            <p>Description of Document 3.</p>
+            <a href="https://drive.google.com/file/d/11C9uRF2OEDh7Pj9tOlntCriKxmC3dpAt/view?usp=drive_link" class="document-link" target="_blank">Open Document 3</a>
+        </div>
+
+        <!-- Document 4 Card -->
+        <div class="document-card">
+            <img src="https://via.placeholder.com/200" class="doc-preview" alt="Document 4 Preview">
+            <h3>Document 4</h3>
+            <p>Description of Document 4.</p>
+            <a href="https://drive.google.com/file/d/15BSuzBrlFfe4Sq2xw1PwnX1NoNv35zsL/view?usp=drive_link" class="document-link" target="_blank">Open Document 4</a>
+        </div>
+
+        <!-- Document 5 Card -->
+        <div class="document-card">
+            <img src="https://via.placeholder.com/200" class="doc-preview" alt="Document 5 Preview">
+            <h3>Document 5</h3>
+            <p>Description of Document 5.</p>
+            <a href="https://docs.google.com/document/d/1Cc5no0751hIK4ZyEJNgmQWMi1kbJiz9k/edit?usp=drive_link&ouid=102993418076266813903&rtpof=true&sd=true" class="document-link" target="_blank">Open Document 5</a>
+        </div>
+
+        <!-- Document 6 Card -->
+        <div class="document-card">
+            <img src="https://via.placeholder.com/200" class="doc-preview" alt="Document 6 Preview">
+            <h3>Document 6</h3>
+            <p>Description of Document 6.</p>
+            <a href="https://drive.google.com/file/d/1GdQ0xqXBujPMx4Nwf8vemOyrSnmX8lkY/view?usp=drive_link" class="document-link" target="_blank">Open Document 6</a>
+        </div>
+
+        <!-- Document 7 Card -->
+        <div class="document-card">
+            <img src="https://via.placeholder.com/200" class="doc-preview" alt="Document 7 Preview">
+            <h3>Document 7</h3>
+            <p>Description of Document 7.</p>
+            <a href="https://drive.google.com/file/d/1PL_x3qQ-VjMQxQLWW1_hFj-6dvzUWVUc/view?usp=drive_link" class="document-link" target="_blank">Open Document 7</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Documents | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
